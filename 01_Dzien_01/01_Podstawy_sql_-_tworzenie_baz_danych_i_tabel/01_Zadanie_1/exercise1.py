@@ -1,1 +1,1 @@
-sql = "sql code should be placed here"
+sql = 'CREATE DATABASE exercises_db;'
