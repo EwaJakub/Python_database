@@ -1,1 +1,5 @@
-remove_product = "Write the query here!"
+remove_product = "Zapytanie wpisz tutaj!"
+
+"""
+remove_product = DELETE FROM products WHERE id=1;
+"""
