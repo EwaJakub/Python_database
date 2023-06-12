@@ -1,5 +1,6 @@
 sql = "sql code should be placed here"
-sql = """DROP TABLE IF EXISTS products;
+sql = """
+DROP TABLE IF EXISTS products;
 CREATE TABLE Products (
     id serial primary key,
     name varchar(255),
