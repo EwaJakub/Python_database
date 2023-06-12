@@ -1,6 +1,6 @@
 sql = "sql code should be placed here"
 sql = """
-DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS Products;
 CREATE TABLE Products (
     id serial primary key,
     name varchar(255),
@@ -9,13 +9,13 @@ CREATE TABLE Products (
 );
 
 DROP TABLE IF EXISTS Orders;
-CREATE TABLE orders (
+CREATE TABLE Orders (
     id serial primary key,
     descriptions text
 );
 
 DROP TABLE IF EXISTS Clients;
-CREATE TABLE clients (
+CREATE TABLE Clients (
     id serial primary key,
     name char(255),
     surname char(255)

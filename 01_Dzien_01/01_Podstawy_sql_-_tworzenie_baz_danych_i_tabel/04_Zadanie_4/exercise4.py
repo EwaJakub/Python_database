@@ -1,32 +1,31 @@
+"\c cinemas_db"
 sql = """
-\c cinemas_db
-DROP TABLE IF EXISTS Cinemas;
+DROP TABLE IF EXISTS Cinemas CASCADE;
 CREATE TABLE Cinemas (
-    id serial,
+    id serial primary key,
     name varchar(255),
-    address varchar(255),
-    PRIMARY KEY(id)
+    address varchar(255)
 );
-DROP TABLE IF EXISTS Movies;
+
+DROP TABLE IF EXISTS Movies CASCADE;
 CREATE TABLE Movies (
-    id serial,
-    name varchar(255),   
+    id serial primary key,
+    name varchar(255),
     description varchar(255),
-    rating integer,
-    PRIMARY KEY(id)
+    rating integer
 );
-DROP TABLE IF EXISTS Tickets;
+
+DROP TABLE IF EXISTS Tickets CASCADE;
 CREATE TABLE Tickets (
-    id serial,
+    id serial primary key,
     quantity integer,
-    date date,
-    PRIMARY KEY(id)
+    price float
 );
-DROP TABLE IF EXISTS Payments;
+
+DROP TABLE IF EXISTS Payments CASCADE;
 CREATE TABLE Payments (
-    id serial,
+    id serial primary key,
     type varchar(255),
-    date date,
-    PRIMARY KEY(id)
+    date date
 );
 """
