@@ -9,12 +9,11 @@
     <!-- movie -->
     <div>
         <form class="movie_form" method="post" action="#">
+            <input name="id" type="hidden" value="{{movie_data.movie_id_value}}"/><br>
             <label>Name</label><br>
-            <input name="name" type="text" maxlength="255" value=""/><br>
+            <input name="name" type="text" maxlength="255" value="{{movie_data.movie_title}}"/><br>
             <label>Description</label><br>
-            <input name="desc" type="text" maxlength="255" value=""/><br>
-            <label>Rating</label><br>
-            <input name="rating" type="number" min="0" max="10"/><br>
+            <input name="desc" type="text" maxlength="255" value="{{movie_data.movie_description}}"/><br>
             <button type="submit" name="submit" value="movie">Submit</button>
         </form>
     </div>

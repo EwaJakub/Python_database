@@ -1,5 +1,6 @@
 from psycopg2 import connect, ProgrammingError
 
+
 def execute_sql(sql_code, db):
     """
     Run given sql code with psycopg2.

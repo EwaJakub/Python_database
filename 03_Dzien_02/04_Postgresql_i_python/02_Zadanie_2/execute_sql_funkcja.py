@@ -25,6 +25,8 @@ def execute_sql(sql_code, db):
                 conn.commit()
             except ProgrammingError:
                 output = None
+    cursor.close()
+    conn.close()
     return output
 
 

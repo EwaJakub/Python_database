@@ -30,5 +30,5 @@ def execute_sql(sql_code, db):
 
 if __name__ == '__main__':
     sql_insert = "INSERT INTO cinemas(name, address) VALUES ('Cinemacity4', 'wieliczka 16');"
-    sql_select = "SELECT * FROM cinemas;"
+    sql_select = "SELECT * FROM movies;"
     print(execute_sql(sql_select, 'cinemas_db'))

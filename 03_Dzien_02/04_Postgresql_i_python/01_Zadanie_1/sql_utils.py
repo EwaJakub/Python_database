@@ -23,10 +23,10 @@ def execute_sql(sql_code, db):
                 # output = [i for i in cursor]
                 output = cursor.fetchall()
                 conn.commit()
-                cursor.close()
-                conn.close()
             except ProgrammingError:
                 output = None
+    cursor.close()
+    conn.close()
     return output
 
 
@@ -35,4 +35,3 @@ if __name__ == '__main__':
     sql_select = "SELECT * FROM cinemas;"
     print(execute_sql(sql_select, 'cinemas_db'))
     print(execute_sql(sql_insert, 'cinemas_db'))
-
